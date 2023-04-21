@@ -118,19 +118,36 @@ a {
     text-decoration: none;
 }
 
+/*---------------------------------HEADER---------------------------*/
+
 .container-nav {
     display: flex;
 }
 
 .navigation {
     display: flex;
-    align-items: center;
 }
 
 
 .nav-items {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4px;
     padding-left: 138px;
+    align-items: center;
+}
+
+.list-item {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  color: #a0a0a0;
 }
 
 .logo-nav {
@@ -144,6 +161,14 @@ a {
     color: #ffffff;
 }
 
+.logo-stand {
+  color: #0075FF;
+}
+
+.logo-ukr {
+  color: #FFB800;
+}
+
 .nav-item {
     margin-right: 50px;
 }
@@ -152,8 +177,21 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+/*------------------------------HERO--------------------------*/
+
 .hero-heading {
+    width: 1091px;
+    height: 78px;
+    padding-top: 110px;
+    padding-left: 175px;
+    padding-right: 174px;
+    padding-bottom: 321px;
     text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 139px;
 }
 
 .container-nav {
@@ -211,8 +249,6 @@ body {
   padding-top: 5px;
 }
 
-.about-photo__list--item {
-}
 .about-photo__list--item:not(:last-child) {
   margin-right: 35px;
 }
@@ -260,7 +296,138 @@ body {
     color: #FFC700;
 }
 
-.hero-text-container {
-    display: flex;
+/*----------------------------UKRAINE-PHOTO------------------*/
+
+.ukraine-photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 773px;
+  background-color: #010632;
 }
+
+.photo-heading {
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Istok Web';
+  width: 780px;
+  height: 138px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #FFFFFF;
+}
+
+.photo-heading-sp {
+  margin-left: 78px;
+}
+
+/*------------------------------------HELPING---------------------*/
+
+.helping {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #060D49;
+  width: 1440px;
+  height: 857px;
+}
+
+.help-heading {
+  padding-top: 28px;
+  margin-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Istok Web';
+  width: 753px;
+  height: 69px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #FFFFFF;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__item {
+  width: 365px;
+  height: 493px;
+  background-color: #FFFFFF;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.team-img {
+  margin-top: 26px;
+  margin-left: 15px; 
+  width: 335px;
+  height: 234px;
+}
+
+.team__info--box {
+  text-align: center;
+}
+
+.photo-title {
+  margin: 0 auto;
+  font-family: 'Istok Web';
+  width: 293px;
+  height: 69px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #000;
+}
+
+.photo-text {
+  margin-right: auto;
+  margin-left: auto;
+  width: 287px;
+  height: 35px;
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000;
+}
+
+.photo-procent {
+  margin: 0 auto;
+  width: 46px;
+  height: 35px;
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.photo-img-progress {
+  width: 60px;
+  margin-bottom: 13px;
+}
+
+.btn-photo {
+  margin: 0 auto;
+  display: block;
+  width: 235px;
+  height: 61px;
+  font-family: 'Jost';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color:#0057FF;
+  border: none;
+  border-radius: 15px;
+}
+
+
 
