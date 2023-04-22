@@ -532,14 +532,14 @@ address {
 .link-item {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #FFC700;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
 .social-one {
-  fill: #FFFFFF;
+  fill: #000;
   width: 20px;
   height: 20px;
   margin-left: 12px;
@@ -547,7 +547,7 @@ address {
 }
 
 .social-two {
-  fill: #FFFFFF;
+  fill: #000;
   width: 20px;
   height: 20px;
   margin-left: 12px;
@@ -555,20 +555,11 @@ address {
 }
 
 .social-three {
-  fill: #FFFFFF;
+  fill: #000;
   width: 20px;
   height: 20px;
   margin-left: 12px;
   margin-right: 12.84px;
-}
-
-.social-four {
-  fill: #FFFFFF;
-  width: 20px;
-  height: 20px;
-  margin-left: 12px;
-  margin-right: 12px;
-
 }
 
 .link-item:hover {
