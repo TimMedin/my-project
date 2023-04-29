@@ -28,6 +28,34 @@
         </div>
     </header>  
     <main>
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Open modal for @mdo</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <section class="hero">
             <div class="container-hero">
                 <h1 class="hero-heading"><span class="hero-heading-sp">Ой у лузі...</span><br>
@@ -74,7 +102,26 @@
         </section>
         <section class="ukraine-photo">
             <h2 class="photo-heading">Якщо ми дуже допоможемо ЗСУ <br><span class="photo-heading-sp">то наша Україно буде така</span></h2>
-
+            <div class="images-container">
+                <div class="father">
+                    <ul class="ul1">
+                        <li>
+                            <img class="frst-img ukraine-img" src="./images/Rectangle32.png" alt="" />
+                        </li>
+                        <li>
+                            <img class="second-img ukraine-img" src="./images/Rectangle36.png" alt="" />
+                            <img class="ukraine-img" src="./images/Rectangle37.png" alt="" />
+                        </li>
+                    </ul>
+                    <ul class="ul1">
+                        <li class="li22"><img class="ukraine-img" src="./images/Rectangle33.png" alt="" /></li>
+                        <li class="li22"><img class="ukraine-img" src="./images/Rectangle35.png" alt="" /></li>
+                    </ul>
+                </div>
+                <ul class="ul2">
+                    <li><img class="ukraine-img" src="./images/Rectangle34.png" alt="" /></li>
+                </ul>
+            </div>
         </section>
                 <section class="helping">
                     <h2 class="help-heading">Проекти пожертвування на ЗСУ</h2>
@@ -86,7 +133,7 @@
                                 <p class="photo-text">Lorem Ipsum is simply</p>
                                 <h3 class="photo-procent">25%</h3>
                                 <img src="/images/progress.png" class="photo-img-progress" alt="полоса">
-                                <button class="btn-photo">Підтримати</button>
+                                <button class="btn-photo" id="open-form-modal-btn">Підтримати</button>
                             </div>
                         </li>
                         <li class="team__item">
@@ -96,7 +143,7 @@
                                 <p class="photo-text">Lorem Ipsum is simply</p>
                                 <h3 class="photo-procent">25%</h3>
                                 <img src="/images/progress.png" class="photo-img-progress" alt="полоса">
-                                <button class="btn-photo">Підтримати</button>
+                                 <button class="btn-photo" id="open-form-modal-btn">Підтримати</button>
                             </div>
                         </li>
                         <li class="team__item">
@@ -106,7 +153,7 @@
                                 <p class="photo-text">Lorem Ipsum is simply</p>
                                 <h3 class="photo-procent">25%</h3>
                                 <img src="/images/progress.png" class="photo-img-progress" alt="полоса">
-                                    <button class="btn-photo">Підтримати</button>
+                                    <button class="btn-photo" id="open-form-modal-btn">Підтримати</button>
                             </div>
                         </li>
                     </ul>
@@ -153,6 +200,36 @@
                                 </ul>
                             </div>
                 </footer>
+                <div class="modal-bgd" id="form-modal">
+                    <div class="modal-form-container">
+                        <form action='#' class='modal-form' id='form' data-netlify="true">
+                            <button class="close-btn">x</button>
+                            <h4 class="modal-form-title">Підртимай ЗСУ</h4>
+                            <div class="modal-form-field">
+                                <lebel for="user-name" class="modal-field-name">Email</lebel>
+                                <input type="text" class="modal-field-input"  id="user-name" name="Ім’я">
+                            </div>
+                            <div class="modal-form-field">
+                                <lebel for="user-email" class="modal-field-name">Money</lebel>
+                                <input type="text" class="modal-field-input"  id="user-password" name="Password">
+                            </div>
+                            <div class="modal-form-field">
+                                <lebel for="user-email" class="modal-field-name">Card number</lebel>
+                                <input type="email" class="modal-field-input" id="user-email" name="Email">
+                            </div>
+                            <button class="modal-form-btn" id="launch-btn">Підтримати</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-bgd" id="success-modal">
+                    <div class="modal-form modal-form-container">
+                        <button class="close-btn">x</button>
+                        <h4 class="modal-form-title">Дякуємо за підтримку</h4>
+                        <p class="modal-form-descr modal-descr">Слава Україні! Героям Слава!</p>
+                    </div>
+                </div>
+                <script src="/form.js"></script>
+
     </main>
 </body>
 </html>
